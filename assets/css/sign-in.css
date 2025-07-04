@@ -1,0 +1,197 @@
+body {
+    font-family: "Archivo Black", sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-sign {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: pop 0.8s ease-in-out;
+}
+
+.form-container {
+    padding: 40px;
+    padding-top: 75px;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+.input-user {
+    padding: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* .fm-noto {
+    font-family: "Noto Sans",  sans-serif;
+} */
+
+.no-border {
+    border: none;
+}
+
+.no-border:focus-visible {
+    outline: none;
+}
+
+.input-pass {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.focused {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+}
+
+.w-215 {
+    width: 215px;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.terms input {
+    margin-right: 6px;
+    margin-top: 6px;
+}
+
+.signup-btn {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signup-btn:hover {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.signup-btn:active {
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+}
+
+.demo-btn {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.demo-btn:hover {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.demo-btn:active {
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+}
+
+.logo-container {
+    display: none;
+}
+
+.image-container {
+    display: none;
+}
+
+.title {
+    margin-top: 11rem;
+    margin-left: 1rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.mb-15 {
+    margin-bottom: 15rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.mt-4-2 {
+    margin-top: 2.750rem;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 1024px) {
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 530px;
+        clip-path: circle(100% at right center);
+        background-image: url(../img/tinta.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+    }
+}
+
+@media (max-width: 1023px) {
+    .form-container {
+        padding-top: 0;
+        width: 300px;
+    }
+
+    .logo-container {
+        display: flex;
+        flex-wrap: wrap;
+        background-image: url(../img/tinta.png);
+        background-size: cover;
+        background-position-y: center;
+        justify-content: center;
+    }
+
+    .container-sign {
+        display: block;
+    }
+
+    .w-215 {
+        width: 180px;
+    }
+}
